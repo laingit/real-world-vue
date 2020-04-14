@@ -4,6 +4,8 @@ import EventCreate from './views/EventCreate.vue'
 import EventList from './views/EventList.vue'
 import EventShow from './views/EventShow.vue'
 
+import IdroList from './views/IdroList.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -24,6 +26,11 @@ export default new Router({
       name: 'event-show',
       component: EventShow,
       props: true
+    },
+    {
+      path: '/idrometri/',
+      name: 'idro-list',
+      component: IdroList
     }
   ]
 })

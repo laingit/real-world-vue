@@ -4,13 +4,16 @@ import * as user from '@/store/modules/user.js'
 import * as event from '@/store/modules/event.js'
 import * as notification from '@/store/modules/notification.js'
 
+import * as idro from '@/store/modules/idro.js'
+
 Vue.use(Vuex)
 
 export default new Vuex.Store({
   modules: {
     user,
     event,
-    notification
+    notification,
+    idro
   },
   state: {
     categories: [
